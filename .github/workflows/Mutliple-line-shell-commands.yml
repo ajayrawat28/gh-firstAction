@@ -1,0 +1,10 @@
+name: Multiple line execution workflow
+on: workflow_dispatch
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print multiple lines using pipe
+        run: |
+            echo "Hello there, first line !!"
+            echo "Bye bye, second line"
